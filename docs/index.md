@@ -4,7 +4,7 @@
 [![image](https://img.shields.io/pypi/v/geodemo_lee.svg)](https://pypi.python.org/pypi/geodemo_lee)
 
 
-**A Python package for geodemo**
+**A Python package for geodemo_lee**
 
 
 -   Free software: MIT license
