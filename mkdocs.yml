@@ -4,8 +4,6 @@ site_author: Ly Mot
 site_url: https://LyMot.github.io/geodemo_lee
 repo_url: https://github.com/LyMot/geodemo_lee
 
-# copyright: "Copyright © 2023 Ly Mot"
-
 theme:
     palette:
         scheme: preference
