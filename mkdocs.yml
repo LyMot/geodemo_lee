@@ -57,7 +57,7 @@ nav:
       - Ipywidgets events: notebooks/ipywidgets_events.ipynb
       - Ipywidgets intro: notebooks/ipywidgets.ipynb
       - Toolbar Gui: notebooks/toolbar_gui.ipynb
-      - Toolbar Intro: notebooks/toolbar.ipynb
+      - Toolbar : notebooks/toolbar.ipynb
       - Test Utils: notebooks/test_utils.ipynb
       - Whitebox Intro: notebooks/whitebox.ipynb
 
