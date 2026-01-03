@@ -48,3 +48,5 @@ nav:
   - Notebooks:
       - Folium Intro: notebooks/folium_intro.ipynb
       - Ipyleaflet Intro: notebooks/ipyleaflet_intro.ipynb
+      - test Utils: notebooks/test_utils.ipynb
+
