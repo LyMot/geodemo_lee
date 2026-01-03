@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://LyMot.github.io/geodemo_lee/notebooks/ipyleaflet_intro/">
       
       
-        <link rel="prev" href="../folium_intro/">
+        <link rel="prev" href="../geopandas/">
       
       
-        <link rel="next" href="../test_utils/">
+        <link rel="next" href="../ipywidgets_box/">
       
       
         
@@ -584,6 +584,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../add_shapefile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add Shapefile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csv_to_point.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CSV to Point
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../earth_engine_intro.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Earth Engine Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../folium_intro/" class="md-nav__link">
         
   
@@ -592,6 +676,62 @@
     
   
     Folium Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geopandas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geopandas Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipyfilechooser_intro.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ipfilechooser Intro
   
 
     
@@ -749,6 +889,146 @@
   
   
     <li class="md-nav__item">
+      <a href="../ipywidgets_box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ipywidgets box
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipywidgets_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ipywidgets events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipywidgets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ipywidgets intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toolbar_gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toolbar Gui
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toolbar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toolbar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../test_utils/" class="md-nav__link">
         
   
@@ -756,7 +1036,35 @@
   <span class="md-ellipsis">
     
   
-    test Utils
+    Test Utils
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whitebox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whitebox Intro
   
 
     
@@ -1057,6 +1365,34 @@
         }, 1000)
       })
 </script>
+<script>
+(function() {
+  function addWidgetsRenderer() {
+    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
+    var scriptElement = document.createElement('script');
+    
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    
+    var widgetState;
+
+    // Fallback for older version:
+    try {
+      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
+
+      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
+        
+        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
+        
+      }
+    } catch(e) {}
+
+    scriptElement.src = widgetRendererSrc;
+    document.body.appendChild(scriptElement);
+  }
+
+  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
+}());
+</script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -1354,8 +1690,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1376,24 +1712,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipyleaflet</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-1">import ipyleaflet</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[1], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">ipyleaflet</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ipyleaflet'</pre>
 </div>
 </div>
 </div>
@@ -1431,17 +1749,15 @@ m</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[2], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> m <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">ipyleaflet</span><span style="color: rgb(98,98,98)">.</span>Map()
-<span class="ansi-green-intense-fg ansi-bold">      2</span> m
-
-<span class="ansi-red-fg">NameError</span>: name 'ipyleaflet' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="1a7c420b-957b-4de6-81f4-bffcd820e02f" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('1a7c420b-957b-4de6-81f4-bffcd820e02f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "10fcc1a4abd84f438056c4b97a0f6223"}
+</script>
 </div>
 </div>
 </div>
@@ -1458,8 +1774,8 @@ Cell <span class="ansi-green-fg">In[2], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1480,24 +1796,6 @@ Cell <span class="ansi-green-fg">In[2], line 1</span>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyleaflet</span><span class="w"> </span><span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">FullScreenControl</span><span class="p">,</span> <span class="n">LayersControl</span><span class="p">,</span> <span class="n">DrawControl</span><span class="p">,</span> <span class="n">MeasureControl</span><span class="p">,</span> <span class="n">ScaleControl</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-3">from ipyleaflet import Map, FullScreenControl, LayersControl, DrawControl, MeasureControl, ScaleControl</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[3], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">ipyleaflet</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Map, FullScreenControl, LayersControl, DrawControl, MeasureControl, ScaleControl
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ipyleaflet'</pre>
 </div>
 </div>
 </div>
@@ -1537,18 +1835,15 @@ m</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[4], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> m <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">Map</span>(center<span style="color: rgb(98,98,98)">=</span>[<span style="color: rgb(98,98,98)">40</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">100</span>], zoom<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">4</span>, scroll_wheel_zoom<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">True</span>)
-<span class="ansi-green-intense-fg ansi-bold">      2</span> m<span style="color: rgb(98,98,98)">.</span>layout<span style="color: rgb(98,98,98)">.</span>height<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">600px</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> m
-
-<span class="ansi-red-fg">NameError</span>: name 'Map' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="bcd41a5a-d742-4697-b6ed-658b8b8a704f" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('bcd41a5a-d742-4697-b6ed-658b8b8a704f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0efd23d064384c7d98cc55324ae222f1"}
+</script>
 </div>
 </div>
 </div>
@@ -1565,8 +1860,8 @@ Cell <span class="ansi-green-fg">In[4], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1591,27 +1886,9 @@ Cell <span class="ansi-green-fg">In[4], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[5], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_control(FullScreenControl())
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1636,27 +1913,9 @@ Cell <span class="ansi-green-fg">In[5], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[6], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_control(LayersControl(position<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">topright</span><span style="color: rgb(175,0,0)">"</span>))
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1681,27 +1940,9 @@ Cell <span class="ansi-green-fg">In[6], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[7], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_control(DrawControl(position<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">topleft</span><span style="color: rgb(175,0,0)">"</span>))
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1726,27 +1967,9 @@ Cell <span class="ansi-green-fg">In[7], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[8], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_control(MeasureControl())
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1771,24 +1994,6 @@ Cell <span class="ansi-green-fg">In[8], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[9], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_control(ScaleControl(position<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">bottomleft</span><span style="color: rgb(175,0,0)">"</span>))
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -1801,8 +2006,8 @@ Cell <span class="ansi-green-fg">In[9], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1827,27 +2032,9 @@ Cell <span class="ansi-green-fg">In[9], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[10], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">ipyleaflet</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> basemaps, TileLayer
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ipyleaflet'</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1872,27 +2059,9 @@ Cell <span class="ansi-green-fg">In[10], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[11], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_layer(basemaps<span style="color: rgb(98,98,98)">.</span>OpenTopoMap)
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1913,24 +2082,6 @@ Cell <span class="ansi-green-fg">In[11], line 1</span>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">basemaps</span><span class="o">.</span><span class="n">Esri</span><span class="o">.</span><span class="n">WorldImagery</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-12">m.add_layer(basemaps.Esri.WorldImagery)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[12], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_layer(basemaps<span style="color: rgb(98,98,98)">.</span>Esri<span style="color: rgb(98,98,98)">.</span>WorldImagery)
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
 </div>
 </div>
 </div>
@@ -1966,23 +2117,22 @@ Cell <span class="ansi-green-fg">In[12], line 1</span>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[13], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="3922fa8c-ccff-473f-8262-61a4349c3a7f" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('3922fa8c-ccff-473f-8262-61a4349c3a7f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0efd23d064384c7d98cc55324ae222f1"}
+</script>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2015,31 +2165,9 @@ Cell <span class="ansi-green-fg">In[13], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[14], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> google_map <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">TileLayer</span>(
-<span class="ansi-green-intense-fg ansi-bold">      2</span>     url<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">https://mt1.google.com/vt/lyrs=m&amp;x=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{x}</span><span style="color: rgb(175,0,0)">&amp;y=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{y}</span><span style="color: rgb(175,0,0)">&amp;z=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{z}</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      3</span>     attribution<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Google</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Google Maps</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      5</span> )
-
-<span class="ansi-red-fg">NameError</span>: name 'TileLayer' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2064,27 +2192,9 @@ Cell <span class="ansi-green-fg">In[14], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[15], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_layer(google_map)
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2117,31 +2227,9 @@ Cell <span class="ansi-green-fg">In[15], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[16], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> google_satellite <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">TileLayer</span>(
-<span class="ansi-green-intense-fg ansi-bold">      2</span>     url<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">https://mt1.google.com/vt/lyrs=y&amp;x=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{x}</span><span style="color: rgb(175,0,0)">&amp;y=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{y}</span><span style="color: rgb(175,0,0)">&amp;z=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{z}</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      3</span>     attribution<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Google</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Google Satellite</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> )
-
-<span class="ansi-red-fg">NameError</span>: name 'TileLayer' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2162,24 +2250,6 @@ Cell <span class="ansi-green-fg">In[16], line 1</span>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">google_satellite</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-17">m.add_layer(google_satellite)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[17], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>add_layer(google_satellite)
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
 </div>
 </div>
 </div>
@@ -2215,23 +2285,22 @@ Cell <span class="ansi-green-fg">In[17], line 1</span>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[18], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="e92ae717-3bf7-44c2-9f46-2f2a9737eeee" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('e92ae717-3bf7-44c2-9f46-2f2a9737eeee');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0efd23d064384c7d98cc55324ae222f1"}
+</script>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2256,24 +2325,6 @@ Cell <span class="ansi-green-fg">In[18], line 1</span>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[19], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">m</span><span style="color: rgb(98,98,98)">.</span>attribution_control <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'm' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -2286,8 +2337,8 @@ Cell <span class="ansi-green-fg">In[19], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2308,24 +2359,6 @@ Cell <span class="ansi-green-fg">In[19], line 1</span>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyleaflet</span><span class="w"> </span><span class="kn">import</span> <span class="n">Marker</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-20">from ipyleaflet import Marker</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[20], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">ipyleaflet</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Marker
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ipyleaflet'</pre>
 </div>
 </div>
 </div>
@@ -2373,18 +2406,15 @@ m</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[21], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> marker1 <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">Marker</span>(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker1</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">40</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">100</span>))
-<span class="ansi-green-intense-fg ansi-bold">      2</span> marker2 <span style="color: rgb(98,98,98)">=</span> Marker(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker2</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">30</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">90</span>))
-<span class="ansi-green-intense-fg ansi-bold">      3</span> marker3 <span style="color: rgb(98,98,98)">=</span> Marker(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker3</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">20</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">80</span>))
-
-<span class="ansi-red-fg">NameError</span>: name 'Marker' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="2bbee6bf-09a4-469f-9149-11dfb0145300" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('2bbee6bf-09a4-469f-9149-11dfb0145300');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0efd23d064384c7d98cc55324ae222f1"}
+</script>
 </div>
 </div>
 </div>
@@ -2401,8 +2431,8 @@ Cell <span class="ansi-green-fg">In[21], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2423,24 +2453,6 @@ Cell <span class="ansi-green-fg">In[21], line 1</span>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyleaflet</span><span class="w"> </span><span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">Marker</span><span class="p">,</span> <span class="n">MarkerCluster</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-22">from ipyleaflet import Map, Marker, MarkerCluster</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[22], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">ipyleaflet</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Map, Marker, MarkerCluster
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'ipyleaflet'</pre>
 </div>
 </div>
 </div>
@@ -2494,18 +2506,15 @@ m</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[23], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> marker1 <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">Marker</span>(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker1</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">50</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">100</span>))
-<span class="ansi-green-intense-fg ansi-bold">      2</span> marker2 <span style="color: rgb(98,98,98)">=</span> Marker(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker2</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">30</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">110</span>))
-<span class="ansi-green-intense-fg ansi-bold">      3</span> marker3 <span style="color: rgb(98,98,98)">=</span> Marker(name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">marker3</span><span style="color: rgb(175,0,0)">'</span>, location<span style="color: rgb(98,98,98)">=</span>(<span style="color: rgb(98,98,98)">40</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">90</span>))
-
-<span class="ansi-red-fg">NameError</span>: name 'Marker' is not defined</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jupyter-widgets jp-OutputArea-output jp-OutputArea-executeResult" id="2b743619-0540-4815-bc2b-d8f28d1faa2e" tabindex="0">
+<script type="text/javascript">
+var element = document.getElementById('2b743619-0540-4815-bc2b-d8f28d1faa2e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0efd23d064384c7d98cc55324ae222f1"}
+</script>
 </div>
 </div>
 </div>
@@ -2514,6 +2523,9 @@ Cell <span class="ansi-green-fg">In[23], line 1</span>
 </div>
 </div> <!-- jp-Notebook -->
 </div> <!-- jupyter-wrapper -->
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"f483ed470a8043dd9d4e350a8f72f8b2": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "grab"}}, "6190255bb39a4f429898c8bef61e87ef": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "move"}}, "bc55ebd598554bae97568d5be380bc99": {"model_name": "LeafletTileLayerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletTileLayerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletTileLayerView", "attribution": "&copy; <a href=\"https:\/\/www.openstreetmap.org\/copyright\">OpenStreetMap<\/a> contributors", "base": true, "bottom": true, "bounds": null, "detect_retina": false, "loading": false, "max_native_zoom": null, "max_zoom": 19, "min_native_zoom": null, "min_zoom": 1, "name": "OpenStreetMap.Mapnik", "no_wrap": false, "opacity": 1.0, "options": ["attribution", "bounds", "detect_retina", "max_native_zoom", "max_zoom", "min_native_zoom", "min_zoom", "no_wrap", "pm_ignore", "tile_size", "tms", "zoom_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "show_loading": false, "snap_ignore": true, "subitems": [], "tile_size": 256, "tms": false, "url": "https:\/\/tile.openstreetmap.org\/{z}\/{x}\/{y}.png", "visible": true, "zoom_offset": 0}}, "135093555e9f463c86abd45142545448": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4ba2aa651a9a4b6eb592a3b59661a8bf": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "grab"}}, "10fcc1a4abd84f438056c4b97a0f6223": {"model_name": "LeafletMapModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_dom_classes": [], "_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMapView", "bottom": 0.0, "bounce_at_zoom_limits": true, "box_zoom": true, "center": [0.0, 0.0], "close_popup_on_click": true, "controls": ["IPY_MODEL_de2ee28d6c954d659d1eb32ca0aec0f5", "IPY_MODEL_6ce59043aeea4a25990173e078befcce"], "crs": {"name": "EPSG3857", "custom": false}, "default_style": "IPY_MODEL_f483ed470a8043dd9d4e350a8f72f8b2", "double_click_zoom": true, "dragging": true, "dragging_style": "IPY_MODEL_6190255bb39a4f429898c8bef61e87ef", "east": 0.0, "fullscreen": false, "inertia": true, "inertia_deceleration": 3000, "inertia_max_speed": 1500, "interpolation": "bilinear", "keyboard": true, "keyboard_pan_offset": 80, "keyboard_zoom_offset": 1, "layers": ["IPY_MODEL_bc55ebd598554bae97568d5be380bc99"], "layout": "IPY_MODEL_135093555e9f463c86abd45142545448", "left": 9007199254740991.0, "max_zoom": null, "min_zoom": null, "modisdate": "2026-01-02", "north": 0.0, "options": ["bounce_at_zoom_limits", "box_zoom", "center", "close_popup_on_click", "double_click_zoom", "dragging", "fullscreen", "inertia", "inertia_deceleration", "inertia_max_speed", "interpolation", "keyboard", "keyboard_pan_offset", "keyboard_zoom_offset", "max_zoom", "min_zoom", "prefer_canvas", "scroll_wheel_zoom", "tap", "tap_tolerance", "touch_zoom", "world_copy_jump", "zoom", "zoom_animation_threshold", "zoom_delta", "zoom_snap"], "panes": {}, "prefer_canvas": false, "right": 0.0, "scroll_wheel_zoom": false, "south": 0.0, "style": "IPY_MODEL_4ba2aa651a9a4b6eb592a3b59661a8bf", "tabbable": null, "tap": true, "tap_tolerance": 15, "tooltip": null, "top": 9007199254740991.0, "touch_zoom": true, "west": 0.0, "window_url": "", "world_copy_jump": false, "zoom": 4.0, "zoom_animation_threshold": 4, "zoom_delta": 1.0, "zoom_snap": 1.0}}, "de2ee28d6c954d659d1eb32ca0aec0f5": {"model_name": "LeafletZoomControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletZoomControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletZoomControlView", "options": ["position", "zoom_in_text", "zoom_in_title", "zoom_out_text", "zoom_out_title"], "position": "topleft", "zoom_in_text": "+", "zoom_in_title": "Zoom in", "zoom_out_text": "-", "zoom_out_title": "Zoom out"}}, "6ce59043aeea4a25990173e078befcce": {"model_name": "LeafletAttributionControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletAttributionControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletAttributionControlView", "options": ["position", "prefix"], "position": "bottomright", "prefix": "ipyleaflet"}}, "e099856ddc1947cb9c4b2764926a4971": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "grab"}}, "036f97a2aa0c4e88b49b641597024a62": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "move"}}, "11b4b63cb6254abe9aaca20962f9f7b6": {"model_name": "LeafletTileLayerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletTileLayerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletTileLayerView", "attribution": "&copy; <a href=\"https:\/\/www.openstreetmap.org\/copyright\">OpenStreetMap<\/a> contributors", "base": true, "bottom": true, "bounds": null, "detect_retina": false, "loading": false, "max_native_zoom": null, "max_zoom": 19, "min_native_zoom": null, "min_zoom": 1, "name": "OpenStreetMap.Mapnik", "no_wrap": false, "opacity": 1.0, "options": ["attribution", "bounds", "detect_retina", "max_native_zoom", "max_zoom", "min_native_zoom", "min_zoom", "no_wrap", "pm_ignore", "tile_size", "tms", "zoom_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "show_loading": false, "snap_ignore": true, "subitems": [], "tile_size": 256, "tms": false, "url": "https:\/\/tile.openstreetmap.org\/{z}\/{x}\/{y}.png", "visible": true, "zoom_offset": 0}}, "387f680f1de1451ba01f0c82d89016bf": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "600px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c7c7479ebdd840c7a19af8b284fe552c": {"model_name": "LeafletMapStyleModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "cursor": "grab"}}, "0efd23d064384c7d98cc55324ae222f1": {"model_name": "LeafletMapModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_dom_classes": [], "_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMapModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMapView", "bottom": 0.0, "bounce_at_zoom_limits": true, "box_zoom": true, "center": [40, -100], "close_popup_on_click": true, "controls": ["IPY_MODEL_7b247b7b858944e7be6d4abe29c96ced", "IPY_MODEL_ee3bddb00e4844e79ccaac2b21709303", "IPY_MODEL_9d0fa03782e54fbc8fe7530eed030107", "IPY_MODEL_63696ed6028f42b2901f6ddda2f339ea", "IPY_MODEL_f531f58ce7524110b6fde8de96114feb", "IPY_MODEL_1d80cc0001e94ad1bba098c80e5d3465"], "crs": {"name": "EPSG3857", "custom": false}, "default_style": "IPY_MODEL_e099856ddc1947cb9c4b2764926a4971", "double_click_zoom": true, "dragging": true, "dragging_style": "IPY_MODEL_036f97a2aa0c4e88b49b641597024a62", "east": 0.0, "fullscreen": false, "inertia": true, "inertia_deceleration": 3000, "inertia_max_speed": 1500, "interpolation": "bilinear", "keyboard": true, "keyboard_pan_offset": 80, "keyboard_zoom_offset": 1, "layers": ["IPY_MODEL_11b4b63cb6254abe9aaca20962f9f7b6", "IPY_MODEL_5ca8e3b5c46149069c97b2694353f592", "IPY_MODEL_a4e69ab02eea4580afa3b991a0bfa141", "IPY_MODEL_6564691adda54b78bab9104edc40debb", "IPY_MODEL_bc69f4d8d83d4e7eb7e9ccb71ed469ad", "IPY_MODEL_f1db9aa36ad14436ae42e990886f6050", "IPY_MODEL_14ceccc6a7604ba6a37c7268c593e7ad"], "layout": "IPY_MODEL_387f680f1de1451ba01f0c82d89016bf", "left": 9007199254740991.0, "max_zoom": null, "min_zoom": null, "modisdate": "2026-01-02", "north": 0.0, "options": ["bounce_at_zoom_limits", "box_zoom", "center", "close_popup_on_click", "double_click_zoom", "dragging", "fullscreen", "inertia", "inertia_deceleration", "inertia_max_speed", "interpolation", "keyboard", "keyboard_pan_offset", "keyboard_zoom_offset", "max_zoom", "min_zoom", "prefer_canvas", "scroll_wheel_zoom", "tap", "tap_tolerance", "touch_zoom", "world_copy_jump", "zoom", "zoom_animation_threshold", "zoom_delta", "zoom_snap"], "panes": {}, "prefer_canvas": false, "right": 0.0, "scroll_wheel_zoom": true, "south": 0.0, "style": "IPY_MODEL_c7c7479ebdd840c7a19af8b284fe552c", "tabbable": null, "tap": true, "tap_tolerance": 15, "tooltip": null, "top": 9007199254740991.0, "touch_zoom": true, "west": 0.0, "window_url": "", "world_copy_jump": false, "zoom": 4.0, "zoom_animation_threshold": 4, "zoom_delta": 1.0, "zoom_snap": 1.0}}, "7b247b7b858944e7be6d4abe29c96ced": {"model_name": "LeafletZoomControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletZoomControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletZoomControlView", "options": ["position", "zoom_in_text", "zoom_in_title", "zoom_out_text", "zoom_out_title"], "position": "topleft", "zoom_in_text": "+", "zoom_in_title": "Zoom in", "zoom_out_text": "-", "zoom_out_title": "Zoom out"}}, "6a2e77e732a24b4f867acb67746b2f9b": {"model_name": "LeafletAttributionControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletAttributionControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletAttributionControlView", "options": ["position", "prefix"], "position": "bottomright", "prefix": "ipyleaflet"}}, "ee3bddb00e4844e79ccaac2b21709303": {"model_name": "LeafletFullScreenControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletFullScreenControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletFullScreenControlView", "options": ["position"], "position": "topleft"}}, "9d0fa03782e54fbc8fe7530eed030107": {"model_name": "LeafletLayersControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletLayersControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletLayersControlView", "collapsed": true, "options": ["collapsed", "position"], "position": "topright"}}, "63696ed6028f42b2901f6ddda2f339ea": {"model_name": "LeafletDrawControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletDrawControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletDrawControlView", "circle": {}, "circlemarker": {"shapeOptions": {}}, "data": [], "edit": true, "marker": {}, "options": ["position"], "polygon": {"shapeOptions": {}}, "polyline": {"shapeOptions": {}}, "position": "topleft", "rectangle": {}, "remove": true}}, "f531f58ce7524110b6fde8de96114feb": {"model_name": "LeafletMeasureControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_custom_units": {}, "_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMeasureControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMeasureControlView", "active_color": "#ABE67E", "capture_z_index": 10000, "completed_color": "#C8F2BE", "options": ["active_color", "capture_z_index", "completed_color", "popup_options", "position", "primary_area_unit", "primary_length_unit", "secondary_area_unit", "secondary_length_unit"], "popup_options": {"className": "leaflet-measure-resultpopup", "autoPanPadding": [10, 10]}, "position": "topleft", "primary_area_unit": "acres", "primary_length_unit": "feet", "secondary_area_unit": null, "secondary_length_unit": null}}, "1d80cc0001e94ad1bba098c80e5d3465": {"model_name": "LeafletScaleControlModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletScaleControlModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletScaleControlView", "imperial": true, "max_width": 100, "metric": true, "options": ["imperial", "max_width", "metric", "position", "update_when_idle"], "position": "bottomleft", "update_when_idle": false}}, "5ca8e3b5c46149069c97b2694353f592": {"model_name": "LeafletTileLayerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletTileLayerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletTileLayerView", "attribution": "Google", "base": false, "bottom": true, "bounds": null, "detect_retina": false, "loading": false, "max_native_zoom": null, "max_zoom": 18, "min_native_zoom": null, "min_zoom": 0, "name": "Google Maps", "no_wrap": false, "opacity": 1.0, "options": ["attribution", "bounds", "detect_retina", "max_native_zoom", "max_zoom", "min_native_zoom", "min_zoom", "no_wrap", "pm_ignore", "tile_size", "tms", "zoom_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "show_loading": false, "snap_ignore": true, "subitems": [], "tile_size": 256, "tms": false, "url": "https:\/\/mt1.google.com\/vt\/lyrs=m&x={x}&y={y}&z={z}", "visible": true, "zoom_offset": 0}}, "a4e69ab02eea4580afa3b991a0bfa141": {"model_name": "LeafletTileLayerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletTileLayerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletTileLayerView", "attribution": "Google", "base": false, "bottom": true, "bounds": null, "detect_retina": false, "loading": false, "max_native_zoom": null, "max_zoom": 18, "min_native_zoom": null, "min_zoom": 0, "name": "Google Satellite", "no_wrap": false, "opacity": 1.0, "options": ["attribution", "bounds", "detect_retina", "max_native_zoom", "max_zoom", "min_native_zoom", "min_zoom", "no_wrap", "pm_ignore", "tile_size", "tms", "zoom_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "show_loading": false, "snap_ignore": true, "subitems": [], "tile_size": 256, "tms": false, "url": "https:\/\/mt1.google.com\/vt\/lyrs=y&x={x}&y={y}&z={z}", "visible": true, "zoom_offset": 0}}, "6564691adda54b78bab9104edc40debb": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [40, -100], "name": "marker1", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "bc69f4d8d83d4e7eb7e9ccb71ed469ad": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [30, -90], "name": "marker2", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "f1db9aa36ad14436ae42e990886f6050": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [20, -80], "name": "marker3", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "9032af9debc14ca191f7ade56d74410e": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [50, -100], "name": "marker1", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "5aa327987c594b078d6b3b7ae0859030": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [30, -110], "name": "marker2", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "5a63a05b6bcc420698d67bce26df2587": {"model_name": "LeafletMarkerModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerView", "alt": "", "base": false, "bottom": false, "draggable": true, "icon": null, "keyboard": true, "location": [40, -90], "name": "marker3", "opacity": 1.0, "options": ["alt", "draggable", "keyboard", "pm_ignore", "rise_offset", "rise_on_hover", "rotation_angle", "rotation_origin", "title", "z_index_offset"], "pane": "", "pm_ignore": true, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "rise_offset": 250, "rise_on_hover": false, "rotation_angle": 0.0, "rotation_origin": "", "snap_ignore": true, "subitems": [], "title": "", "visible": true, "z_index_offset": 0}}, "14ceccc6a7604ba6a37c7268c593e7ad": {"model_name": "LeafletMarkerClusterModel", "model_module": "jupyter-leaflet", "model_module_version": "^0.20", "state": {"_model_module": "jupyter-leaflet", "_model_module_version": "^0.20", "_model_name": "LeafletMarkerClusterModel", "_view_count": null, "_view_module": "jupyter-leaflet", "_view_module_version": "^0.20", "_view_name": "LeafletMarkerClusterView", "animate": true, "animate_adding_markers": false, "base": false, "bottom": false, "disable_clustering_at_zoom": 18, "markers": ["IPY_MODEL_9032af9debc14ca191f7ade56d74410e", "IPY_MODEL_5aa327987c594b078d6b3b7ae0859030", "IPY_MODEL_5a63a05b6bcc420698d67bce26df2587"], "max_cluster_radius": 80, "name": "marker cluster", "options": ["animate", "animate_adding_markers", "disable_clustering_at_zoom", "max_cluster_radius", "pm_ignore", "polygon_options", "remove_outside_visible_bounds", "show_coverage_on_hover", "spider_leg_polyline_options", "spiderfy_distance_multiplier", "spiderfy_on_max_zoom", "zoom_to_bounds_on_click"], "pane": "", "pm_ignore": true, "polygon_options": {}, "popup": null, "popup_max_height": null, "popup_max_width": 300, "popup_min_width": 50, "remove_outside_visible_bounds": true, "show_coverage_on_hover": true, "snap_ignore": true, "spider_leg_polyline_options": {"weight": 1.5, "color": "#222", "opacity": 0.5}, "spiderfy_distance_multiplier": 1, "spiderfy_on_max_zoom": true, "subitems": [], "zoom_to_bounds_on_click": true}}}, "version_major": 2, "version_minor": 0}
+</script>
 
         <style>
         ['pre { line-height: 125%; }\ntd.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }\nspan.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }\ntd.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }\nspan.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }\n.highlight-ipynb .hll { background-color: var(--jp-cell-editor-active-background) }\n.highlight-ipynb { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }\n.highlight-ipynb .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */\n.highlight-ipynb .err { color: var(--jp-mirror-editor-error-color) } /* Error */\n.highlight-ipynb .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */\n.highlight-ipynb .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */\n.highlight-ipynb .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */\n.highlight-ipynb .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */\n.highlight-ipynb .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */\n.highlight-ipynb .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */\n.highlight-ipynb .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */\n.highlight-ipynb .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */\n.highlight-ipynb .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */\n.highlight-ipynb .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */\n.highlight-ipynb .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */\n.highlight-ipynb .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */\n.highlight-ipynb .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */\n.highlight-ipynb .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */\n.highlight-ipynb .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */\n.highlight-ipynb .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */\n.highlight-ipynb .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */\n.highlight-ipynb .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */\n.highlight-ipynb .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */\n.highlight-ipynb .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */\n.highlight-ipynb .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */\n.highlight-ipynb .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */\n.highlight-ipynb .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */\n.highlight-ipynb .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */\n.highlight-ipynb .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */\n.highlight-ipynb .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */\n.highlight-ipynb .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */\n.highlight-ipynb .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */\n.highlight-ipynb .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */\n.highlight-ipynb .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */\n.highlight-ipynb .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */\n.highlight-ipynb .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */\n.highlight-ipynb .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */\n.highlight-ipynb .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */\n.highlight-ipynb .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */\n.highlight-ipynb .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */\n.highlight-ipynb .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */\n.highlight-ipynb .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */\n.highlight-ipynb .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */']

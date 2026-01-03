@@ -33,7 +33,23 @@
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/add_shapefile/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/csv_to_points/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/earthengine_intro/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
          <loc>https://LyMot.github.io/geodemo_lee/notebooks/folium_intro/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/geopandas/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
@@ -41,11 +57,39 @@
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/ipyfilechooser/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
          <loc>https://LyMot.github.io/geodemo_lee/notebooks/ipyleaflet_intro/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/ipywidgets/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/ipywidgets_box/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/ipywidgets_events/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
          <loc>https://LyMot.github.io/geodemo_lee/notebooks/test_utils/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/toolbar/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/toolbar_gui/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://LyMot.github.io/geodemo_lee/notebooks/whitebox/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
 </urlset>
