@@ -6,7 +6,7 @@
 [![image](https://pepy.tech/badge/geodemo_lee)](https://pepy.tech/project/geodemo_lee)
 
 
-**A Python package for geodemo**
+**A Python package for geodemo_lee**
 
 
 -   Free software: MIT license
@@ -18,7 +18,7 @@
 ### pip
 
 ```
-pip install -U geodemo
+pip install -U geodemo_lee
 ```
 
 
