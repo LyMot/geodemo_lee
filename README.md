@@ -18,7 +18,7 @@
 ### pip
 
 ```
-pip install -U geodemo
+pip install -U geodemo_lee
 ```
 
 
