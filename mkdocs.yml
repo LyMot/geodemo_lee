@@ -46,7 +46,18 @@ nav:
       - geodemo_lee module: geodemo_lee.md
       - common module: common.md
   - Notebooks:
+      - Add Shapefile: notebooks/add_shapefile.ipynb
+      - CSV to Point: notebooks/csv_to_point.ipynb
+      - Earth Engine Intro: notebooks/earth_engine_intro.ipynb
       - Folium Intro: notebooks/folium_intro.ipynb
+      - Geopandas Intro: notebooks/geopandas.ipynb
+      - Ipfilechooser Intro: notebooks/ipyfilechooser_intro.ipynb
       - Ipyleaflet Intro: notebooks/ipyleaflet_intro.ipynb
-      - test Utils: notebooks/test_utils.ipynb
+      - Ipywidgets box: notebooks/ipywidgets_box.ipynb
+      - Ipywidgets events: notebooks/ipywidgets_events.ipynb
+      - Ipywidgets intro: notebooks/ipywidgets.ipynb
+      - Toolbar Gui: notebooks/toolbar_gui.ipynb
+      - Toolbar Intro: notebooks/toolbar.ipynb
+      - Test Utils: notebooks/test_utils.ipynb
+      - Whitebox Intro: notebooks/whitebox.ipynb
 
