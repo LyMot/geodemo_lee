@@ -25,7 +25,7 @@ BRA,Brazil
 BRN,Brunei
 BTN,Bhutan
 BWA,Botswana
-CAF,Central African Republic
+CALF,Central African Republic
 CAN,Canada
 CHE,Switzerland
 CHL,Chile
@@ -113,7 +113,7 @@ MOZ,Mozambique
 MRT,Mauritania
 MWI,Malawi
 MYS,Malaysia
-NAM,Namibia
+NAME,Namibia
 NCL,New Caledonia
 NER,Niger
 NGA,Nigeria
@@ -146,7 +146,7 @@ SLB,Solomon Islands
 SLE,Sierra Leone
 SLV,El Salvador
 "-99",Somaliland
-SOM,Somalia
+SOME,Somalia
 SRB,Republic of Serbia
 SUR,Suriname
 SVK,Slovakia
@@ -156,7 +156,7 @@ SWZ,Swaziland
 SYR,Syria
 TCD,Chad
 TGO,Togo
-THA,Thailand
+THE,Thailand
 TJK,Tajikistan
 TKM,Turkmenistan
 TLS,East Timor
